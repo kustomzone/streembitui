@@ -28,7 +28,7 @@
 
                     <div class="form-group form-section-panel" data-bind="visible: nwmode">
                         <label for="tcpport">TCP port:</label><br />
-                        <input type="number" class="form-control" id="tcpport" min="1" max="65000" style="width:120px;display:inline-block" data-bind="value: tcpport">&nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="Use this TCP port to communicate on the Streembit network. Port forwarding or the UPNP settings of your router must grant access to this port in order to send and receive data. This settings is not used by the application in case the transport is WebSocket (WS)." />
+                        <input type="number" class="form-control" id="tcpport" min="1" max="65000" style="width:120px;display:inline-block" data-bind="value: tcpport">&nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="Use this TCP port to communicate on the DoorClient network. Port forwarding or the UPNP settings of your router must grant access to this port in order to send and receive data. This settings is not used by the application in case the transport is WebSocket (WS)." />
                     </div>
 
                     <div class="form-section-panel" data-bind="visible: nwmode">
@@ -67,7 +67,7 @@
 
                 <div role="tabpanel" class="tab-pane settings-tab-panel" id="seeds_settings">
                     <div class="form-group form-section-panel">
-                        <div style="font-weight:bold;display:inline-block">Bootstrap seeds</div>&nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="List of Streembit seed nodes. The seeds assist in user and device discovery, and store the public key data in their distributed hash table (DHT) storage. You can define here your seed nodes." />
+                        <div style="font-weight:bold;display:inline-block">Bootstrap seeds</div>&nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="List of DoorClient seed nodes. The seeds assist in user and device discovery, and store the public key data in their distributed hash table (DHT) storage. You can define here your seed nodes." />
                         <div data-bind="template: { name: 'bootseed-item-template', foreach: bootseeds, afterRender: initui }" style="margin-top:10px">
                         </div>
                         <div style="text-align:left;margin-top:15px">
@@ -115,7 +115,7 @@
                     <div class="form-group form-section-panel">
                         <label for="tcpport">Seed account:</label><br />
                         <input type="text" class="form-control" id="wsport" maxlength="5" style="width:400px;display:inline-block" data-bind="value: private_net_account">
-                        &nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="If the Seed account, Seed port and IP/domain name are defined then the software operates in private network mode. Please note, the seed node must be configured to run as a private network node as well. Remove these configuration settings if you want to connect to the public Streembit network. " />
+                        &nbsp;&nbsp;<i class="fa fa-question-circle" data-toggle="popover" data-content="If the Seed account, Seed port and IP/domain name are defined then the software operates in private network mode. Please note, the seed node must be configured to run as a private network node as well. Remove these configuration settings if you want to connect to the public DoorClient network. " />
                     </div>
 
                     <div class="form-group form-section-panel">

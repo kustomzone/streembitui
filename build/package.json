@@ -1,17 +1,17 @@
 {
-  "name": "streembit",
-  "description": "P2P real time communication system for humans and machines",
+  "name": "doorclient",
+  "description": "City of Osmio P2P client application",
   "author": {
     "name": "T Z Pardi",
-    "email": "tzpardi@streembit.com"
+    "email": "tibor@zovolt.com"
   },
   "version": "1.2.0",
   "main": "index.html",
   "license": "SEE LICENSE IN LICENSE.MD",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streembit/streembitui.git"
-  },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/doorclient/doorclient.git"
+    },
   "window": {
     "toolbar": false,
     "width": 1050,
@@ -19,7 +19,7 @@
     "min-width": 1040,
     "min-height": 740,
     "frame": true,
-    "icon": "lib/images/streembit64.png"
+    "icon": "lib/images/doorclient64.png"
   },
   "scripts": {
     "start": "nw ."

@@ -1,7 +1,7 @@
 #!/bin/bash
-# Streembit Linux shell script
+# DoorClient Linux shell script
 
-echo "Start creating Streembit binary"
+echo "Start creating DoorClient binary"
 
 cd "${0/*}"
 
@@ -9,7 +9,7 @@ CURR_DIR=$(pwd)
 BUILD_DIR=$CURR_DIR/linux64
 EXE_PATH=$CURR_DIR/linux64/nw
 NWPACK_PATH=$CURR_DIR/linux64/package.nw
-APPEXE_PATH=$CURR_DIR/linux64/streembit
+APPEXE_PATH=$CURR_DIR/linux64/doorclient
 ZIP_EXE="/usr/bin/7z"
 
 
@@ -103,7 +103,7 @@ cp -R ../node_modules $BUILD_DIR/node_modules
 echo "copy jspm_packages directory"
 cp -R ../jspm_packages $BUILD_DIR/jspm_packages 
 
-echo "renaming nw to streembit"
+echo "renaming nw to doorclient"
 mv $EXE_PATH $APPEXE_PATH
 
 echo "add executable permission"
@@ -111,18 +111,18 @@ chmod +x $APPEXE_PATH
 
 if ! [ -e "$APPEXE_PATH" ]; 
 then
-echo "error: failed to create streembit executable"
+echo "error: failed to create doorclient executable"
 exit 1
 else 
-echo "streembit executable is created"
+echo "doorclient executable is created"
 fi
 
 echo "create zip file"
 
 cd $BUILD_DIR
-$ZIP_EXE a -tzip "streembit_linux64.zip" $BUILD_DIR/locales $BUILD_DIR/lib $BUILD_DIR/node_modules $BUILD_DIR/jspm_packages $BUILD_DIR/*.* $APPEXE_PATH
+$ZIP_EXE a -tzip "doorclient_linux64.zip" $BUILD_DIR/locales $BUILD_DIR/lib $BUILD_DIR/node_modules $BUILD_DIR/jspm_packages $BUILD_DIR/*.* $APPEXE_PATH
 
-md5sum $BUILD_DIR/streembit_linux64.zip > $BUILD_DIR/streembit_linux64.md5
+md5sum $BUILD_DIR/doorclient_linux64.zip > $BUILD_DIR/doorclient_linux64.md5
 
-echo "creating Streembit binaries completed"
+echo "creating DoorClient binaries completed"
 

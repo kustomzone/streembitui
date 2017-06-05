@@ -46,7 +46,7 @@ body{
 
 /* end loader */
 
-#streembit-container{
+#doorclient-container{
     height:100%;
 }
 
@@ -215,7 +215,7 @@ body{
 .appboot-screen-spinner{
 }
 
-.streembit-screen{
+.doorclient-screen{
     position:relative;
     min-width:960px;
 }
@@ -1072,7 +1072,7 @@ span.awesomeBlue i.addbtn{
     font-size:12px;
     text-transform: uppercase;
     position:absolute;
-    bottom:4px;
+    bottom:10px;
     left:0;
     right:0;
     text-align:center;

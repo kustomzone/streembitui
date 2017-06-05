@@ -17,47 +17,49 @@ System.config({
   map: {
     "accounts": "lib/app/accounts",
     "appconfig": "lib/app/config.js",
-    "appevents": "lib/app/libs/events/index",
+    "appevents": "lib/app/modules/events/index",
     "applogger": "lib/app/logger",
     "appsrvc": "lib/app/appsrvc",
     "apputils": "lib/app/apputils",
     "assert": "npm:jspm-nodelibs-assert@0.2.0",
-    "async": "npm:async@2.0.1",
+    "async": "npm:async@2.1.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "browserify-aes": "npm:browserify-aes@1.0.6",
-    "bs58check": "npm:bs58check@1.1.1",
+    "bs58check": "npm:bs58check@1.3.4",
+    "buffer": "github:jspm/nodelibs-buffer@0.1.0",
     "clarinet": "npm:clarinet@0.11.0",
-    "collections": "npm:collections@5.0.5",
+    "collections": "npm:collections@5.0.6",
     "connections": "lib/app/connections",
     "contact": "lib/app/contact",
     "contactlist": "lib/app/contactlist",
     "contactsutil": "lib/app/contactsutil",
     "core-js": "npm:core-js@1.2.7",
     "create-hash": "npm:create-hash@1.1.2",
-    "cryptlib": "lib/app/libs/crypto/cryptlib",
-    "css": "github:systemjs/plugin-css@0.1.29",
+    "cryptlib": "lib/app/modules/crypto/cryptlib",
+    "css": "github:systemjs/plugin-css@0.1.32",
     "database": "lib/app/database",
     "datadir": "lib/app/datadir",
     "definitions": "lib/app/definitions",
-    "elliptic": "npm:elliptic@6.3.2",
+    "elliptic": "npm:elliptic@6.3.3",
     "events": "github:jspm/nodelibs-events@0.1.1",
     "filedialog": "lib/app/filedialog",
     "filesaver": "lib/app/filesaver",
     "filesender": "lib/app/filesender",
     "filetrans": "lib/app/filetrans",
-    "font-awesome": "npm:font-awesome@4.6.3",
+    "font-awesome": "npm:font-awesome@4.7.0",
     "hash.js": "npm:hash.js@1.0.3",
     "hat": "npm:hat@0.0.3",
-    "i18next": "npm:i18next@3.4.3",
+    "i18next": "npm:i18next@3.5.2",
     "jquery": "npm:jquery@3.1.1",
     "jqueryi18n": "github:wikimedia/jquery.i18n@1.0.4",
     "js-signals": "bower:js-signals@1.0.0",
-    "json": "github:systemjs/plugin-json@0.2.0",
+    "json": "github:systemjs/plugin-json@0.2.3",
+    "jspm-nodelibs-assert": "npm:jspm-nodelibs-assert@0.2.0",
     "jspm/nodelibs-buffer": "github:jspm/nodelibs-buffer@0.1.0",
-    "knockout": "github:knockout/knockout@3.4.0",
-    "lodash": "npm:lodash@4.16.4",
+    "knockout": "github:knockout/knockout@3.4.1",
+    "lodash": "npm:lodash@4.17.4",
     "logger": "lib/app/logger",
     "makeusabrew/bootbox": "github:makeusabrew/bootbox@4.4.0",
     "malsup/blockui": "github:malsup/blockui@2.55.0-2013.01.23",
@@ -66,21 +68,21 @@ System.config({
     "millermedeiros/Hasher": "github:millermedeiros/Hasher@1.2.0",
     "ms": "npm:ms@0.7.2",
     "peercomm": "lib/app/peercomm",
-    "peermsg": "lib/app/libs/message/msglib",
+    "peermsg": "lib/app/modules/message/msglib",
     "remarkable-bootstrap-notify": "bower:remarkable-bootstrap-notify@3.1.3",
     "screenshare": "lib/app/screenshare",
     "secure-random": "npm:secure-random@1.1.1",
     "settings": "lib/app/settings",
     "signals": "npm:signals@1.0.0",
-    "socket.io-client": "npm:socket.io-client@1.6.0",
-    "streembitnet": "lib/app/streembitnet",
+    "socket.io-client": "npm:socket.io-client@1.7.2",
+    "doorclientnet": "lib/app/doorclientnet",
     "text": "github:systemjs/plugin-text@0.0.9",
     "uihandler": "lib/app/uihandler",
     "user": "lib/app/user",
     "util": "github:jspm/nodelibs-util@0.1.0",
     "utilities": "lib/app/utilities",
     "uuid": "npm:uuid@2.0.3",
-    "webrtc-adapter": "npm:webrtc-adapter@2.0.6",
+    "webrtc-adapter": "npm:webrtc-adapter@2.1.0",
     "webrtcaudio": "lib/app/webrtcaudio",
     "webrtccall": "lib/app/webrtccall",
     "webrtcdata": "lib/app/webrtcdata",
@@ -135,7 +137,7 @@ System.config({
     "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@3.1.1"
     },
-    "npm:asn1.js@4.9.0": {
+    "npm:asn1.js@4.9.1": {
       "bn.js": "npm:bn.js@4.11.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "inherits": "npm:inherits@2.0.1",
@@ -148,12 +150,16 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "util": "npm:util@0.10.3"
     },
-    "npm:async@2.0.1": {
-      "lodash": "npm:lodash@4.16.4",
+    "npm:async@2.1.4": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "lodash": "npm:lodash@4.17.4",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:babel-runtime@5.8.38": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:base-x@1.1.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
     "npm:better-assert@1.0.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -203,16 +209,16 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "create-hmac": "npm:create-hmac@1.1.4",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "elliptic": "npm:elliptic@6.3.2",
+      "elliptic": "npm:elliptic@6.3.3",
       "inherits": "npm:inherits@2.0.1",
       "parse-asn1": "npm:parse-asn1@5.0.0",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
-    "npm:bs58@2.0.1": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    "npm:bs58@3.1.0": {
+      "base-x": "npm:base-x@1.1.0"
     },
-    "npm:bs58check@1.1.1": {
-      "bs58": "npm:bs58@2.0.1",
+    "npm:bs58check@1.3.4": {
+      "bs58": "npm:bs58@3.1.0",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2"
     },
@@ -240,7 +246,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream": "github:jspm/nodelibs-stream@0.1.0"
     },
-    "npm:collections@5.0.5": {
+    "npm:collections@5.0.6": {
       "weak-map": "npm:weak-map@1.0.5"
     },
     "npm:constants-browserify@0.0.1": {
@@ -259,7 +265,7 @@ System.config({
       "bn.js": "npm:bn.js@4.11.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
-      "elliptic": "npm:elliptic@6.3.2"
+      "elliptic": "npm:elliptic@6.3.3"
     },
     "npm:create-hash@1.1.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -308,33 +314,34 @@ System.config({
       "randombytes": "npm:randombytes@2.0.3",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:elliptic@6.3.2": {
+    "npm:elliptic@6.3.3": {
       "bn.js": "npm:bn.js@4.11.6",
-      "brorand": "npm:brorand@1.0.6",
+      "brorand": "npm:brorand@1.0.7",
       "hash.js": "npm:hash.js@1.0.3",
       "inherits": "npm:inherits@2.0.1",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:engine.io-client@1.8.0": {
+    "npm:engine.io-client@1.8.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "component-emitter": "npm:component-emitter@1.2.1",
       "component-inherit": "npm:component-inherit@0.0.3",
       "debug": "npm:debug@2.3.3",
-      "engine.io-parser": "npm:engine.io-parser@1.3.1",
+      "engine.io-parser": "npm:engine.io-parser@1.3.2",
       "has-cors": "npm:has-cors@1.1.0",
       "indexof": "npm:indexof@0.0.1",
       "parsejson": "npm:parsejson@0.0.3",
       "parseqs": "npm:parseqs@0.0.5",
       "parseuri": "npm:parseuri@0.0.5",
+      "process": "github:jspm/nodelibs-process@0.1.2",
       "yeast": "npm:yeast@0.1.2"
     },
-    "npm:engine.io-parser@1.3.1": {
-      "after": "npm:after@0.8.1",
+    "npm:engine.io-parser@1.3.2": {
+      "after": "npm:after@0.8.2",
       "arraybuffer.slice": "npm:arraybuffer.slice@0.0.6",
       "base64-arraybuffer": "npm:base64-arraybuffer@0.1.5",
       "blob": "npm:blob@0.0.4",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "has-binary": "npm:has-binary@0.1.6",
+      "has-binary": "npm:has-binary@0.1.7",
       "wtf-8": "npm:wtf-8@1.0.0"
     },
     "npm:evp_bytestokey@1.0.0": {
@@ -342,13 +349,8 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
     },
-    "npm:font-awesome@4.6.3": {
-      "css": "github:systemjs/plugin-css@0.1.29"
-    },
-    "npm:has-binary@0.1.6": {
-      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
-      "fs": "github:jspm/nodelibs-fs@0.1.2",
-      "isarray": "npm:isarray@0.0.1"
+    "npm:font-awesome@4.7.0": {
+      "css": "github:systemjs/plugin-css@0.1.32"
     },
     "npm:has-binary@0.1.7": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -358,7 +360,7 @@ System.config({
     "npm:hash.js@1.0.3": {
       "inherits": "npm:inherits@2.0.1"
     },
-    "npm:i18next@3.4.3": {
+    "npm:i18next@3.5.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:inherits@2.0.1": {
@@ -366,13 +368,13 @@ System.config({
     },
     "npm:miller-rabin@4.0.0": {
       "bn.js": "npm:bn.js@4.11.6",
-      "brorand": "npm:brorand@1.0.6"
+      "brorand": "npm:brorand@1.0.7"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"
     },
     "npm:parse-asn1@5.0.0": {
-      "asn1.js": "npm:asn1.js@4.9.0",
+      "asn1.js": "npm:asn1.js@4.9.1",
       "browserify-aes": "npm:browserify-aes@1.0.6",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "create-hash": "npm:create-hash@1.1.2",
@@ -441,13 +443,13 @@ System.config({
       "inherits": "npm:inherits@2.0.1",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:socket.io-client@1.6.0": {
+    "npm:socket.io-client@1.7.2": {
       "backo2": "npm:backo2@1.0.2",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "component-bind": "npm:component-bind@1.0.0",
       "component-emitter": "npm:component-emitter@1.2.1",
       "debug": "npm:debug@2.3.3",
-      "engine.io-client": "npm:engine.io-client@1.8.0",
+      "engine.io-client": "npm:engine.io-client@1.8.2",
       "has-binary": "npm:has-binary@0.1.7",
       "indexof": "npm:indexof@0.0.1",
       "object-component": "npm:object-component@0.0.3",
@@ -485,9 +487,8 @@ System.config({
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
     },
-    "npm:webrtc-adapter@2.0.6": {
-      "sdp": "npm:sdp@1.0.1"
+    "npm:webrtc-adapter@2.1.0": {
+      "sdp": "npm:sdp@1.1.3"
     }
   }
-
 });

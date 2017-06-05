@@ -3,10 +3,10 @@
 set CUR_DIR="%CD%"
 set BUILD_DIR=%CUR_DIR%\win64
 set EXE_PATH=%CUR_DIR%\win64\nw.exe
-set ICO_PATH=..\lib\images\streembit64.png
+set ICO_PATH=..\lib\images\doorclient64.png
 set RESOURCER_PATH=%CUR_DIR%\buildtools\Resourcer.exe
 set NWPACK_PATH=%CUR_DIR%\win64\package.nw
-set APPEXE_PATH=%CUR_DIR%\win64\streembit.exe
+set APPEXE_PATH=%CUR_DIR%\win64\doorclient.exe
 set ZIP_EXE="C:\Program Files\7-Zip\7z.exe"
 
 SETLOCAL EnableDelayedExpansion
@@ -15,7 +15,7 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 )
 
 echo.
-call :ColorText 19 "Streembit v0.1.1"
+call :ColorText 19 "DoorClient v0.1.1"
 echo.
 call :ColorText 19 "---"
 echo.
@@ -96,10 +96,10 @@ xcopy ..\jspm_packages %BUILD_DIR%\jspm_packages /s /e /y
 
 call :ColorText 19 "renaming exe file"
 echo.
-ren %EXE_PATH% "streembit.exe
+ren %EXE_PATH% "doorclient.exe
 
 IF EXIST %RESOURCER_PATH% (
-	call :ColorText 19 "Resourcer.exe exists, setting Streembit icon"
+	call :ColorText 19 "Resourcer.exe exists, setting DoorClient icon"
 	echo.
 	IF EXIST %ICO_PATH% (
 		%RESOURCER_PATH% -op:upd -src:%APPEXE_PATH% -type:14 -name:IDR_MAINFRAME -file:%ICO_PATH%
@@ -111,7 +111,7 @@ IF EXIST %RESOURCER_PATH% (
 call :ColorText 19 "create zip file"
 echo.
 cd %BUILD_DIR%
-%ZIP_EXE% a -tzip "streembit_win64.zip" %BUILD_DIR%\locales %BUILD_DIR%\lib %BUILD_DIR%\node_modules %BUILD_DIR%\jspm_packages %BUILD_DIR%\*.*
+%ZIP_EXE% a -tzip "doorclient_win64.zip" %BUILD_DIR%\locales %BUILD_DIR%\lib %BUILD_DIR%\node_modules %BUILD_DIR%\jspm_packages %BUILD_DIR%\*.*
 
 goto :eof
 

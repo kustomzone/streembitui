@@ -1,17 +1,17 @@
 #!/bin/bash
-# Streembit Mac OS X shell script
+# DoorClient Mac OS X shell script
 
-echo "Start creating Streembit binary"
+echo "Start creating DoorClient binary"
 
 cd "${0/*}"
 
 CURR_DIR=$(pwd)
 BUILD_DIR=$CURR_DIR/macosx64
 EXE_PATH=$CURR_DIR/macosx64/nwjs.app
-#set ICO_PATH=..\assets\icons\streembit64.png
+#set ICO_PATH=..\assets\icons\doorclient64.png
 #set RESOURCER_PATH=CUR_DIR\buildtools\Resourcer.exe
 NWPACK_PATH=$CURR_DIR/macosx64/package.nw
-APPEXE_PATH=$CURR_DIR/macosx64/streembit
+APPEXE_PATH=$CURR_DIR/macosx64/doorclient
 ZIP_EXE="/usr/bin/7z"
 
 
@@ -73,11 +73,11 @@ cp -R ../node_modules $BUILD_DIR/node_modules
 
 echo "create zip file"
 
-zip -r "streembit_macosx64.zip" $BUILD_DIR/*
+zip -r "doorclient_macosx64.zip" $BUILD_DIR/*
 
-md5 -r streembit_macosx64.zip
+md5 -r doorclient_macosx64.zip
 
-echo "creating Streembit zip completed"
+echo "creating DoorClient zip completed"
 
 
 
